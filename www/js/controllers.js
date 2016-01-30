@@ -1,4 +1,4 @@
-angular.module('starter.controllers', [])
+angular.module('AppBiblioteca.controllers', [])
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
 
@@ -53,4 +53,10 @@ angular.module('starter.controllers', [])
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
-});
+})
+.controller('ConfigCtrl', function($scope, $stateParams) {
+  $scope.config = [
+    {id: 1, lang: 'pt', conf1: 'Config1', conf2: 'Config2'}
+  ];
+})
+;
